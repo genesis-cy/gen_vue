@@ -1,0 +1,209 @@
+@import "./quasar.variables.scss";
+@import "~quasar-styl";
+// @import '~quasar-addon-styl';
+
+q-header {
+    height: 100px;
+}
+.q-toolbar {
+    padding: 0 100px 0 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+.q-drawer--left {
+    width: 131px !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+.logo {
+    padding: 15px 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+.btn-connect {
+    font-size: 16px;
+    font-weight: 800;
+    padding: 7px;
+    margin-left: 10px;
+    .q-avatar {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    .q-icon {
+        font-size: 1.4em;
+    }
+}
+.q-tab__label {
+    color: black;
+    font-weight: 600;
+}
+.q-tab__indicator {
+    height: 4px;
+}
+.q-page {
+    background: #f5f7fb;
+    padding-left: 131px !important;
+}
+.main {
+    padding: 80px;
+    min-height: calc(100vh - 102px);
+}
+.q-form {
+    max-width: 700px;
+    min-width: 700px;
+}
+.q-card {
+    width: 400px;
+    padding: 30px;
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+    &.ml {
+        margin-right: 100px;
+    }
+    h4 {
+        font-size: 25px;
+        font-weight: 900;
+        margin: 0 0 20px;
+        color: $secondary;
+    }
+    p {
+        color: #1c1734;
+        span {
+            color: $primary;
+            display: inline-block;
+            min-width: 60px;
+            font-weight: 800;
+            margin-right: 30px;
+        }
+    }
+    .abs {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 170px;
+        transform: translate(42%, 30%);
+    }
+}
+.q-drawer__content {
+    padding-top: 70px;
+}
+.q-item__section--main {
+    flex: none;
+}
+.q-link {
+    padding: 20px 0;
+    justify-content: center;
+}
+.last-img {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    left: 231px;
+    height: auto;
+}
+.toasted-container .toasted {
+    border-radius: 10px !important;
+    padding: 15px 31px !important;
+    font-size: 17px !important;
+    color: white !important;
+    border-color: $primary !important;
+    background-color: $primary !important;
+}
+@media screen and (max-width: 599px) {
+    .q-form {
+        max-width: auto;
+        min-width: auto;
+    }
+    .q-ma-md {
+        margin: 15px 8px;
+    }
+    .q-toolbar {
+        padding: 0 5px 0 0;
+    }
+    .q-drawer--left {
+        width: 70px !important;
+    }
+    .logo {
+        padding: 11px 10px;
+        width: 70px;
+    }
+    .btn-connect {
+        font-size: 10px;
+        font-weight: 800;
+        padding: 7px 7px;
+        margin-left: 5px;
+        .q-avatar {
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        .q-icon {
+            font-size: 1em;
+        }
+    }
+
+    .q-btn__wrapper {
+        padding: 0;
+    }
+    .q-tab__label {
+        font-size: 10px;
+    }
+    .q-tab__indicator {
+        height: 3px;
+    }
+    .q-page {
+        padding-left: 70px !important;
+    }
+    .main {
+        padding: 20px;
+    }
+    .q-card {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 50px;
+        &.ml {
+            margin-right: 0;
+        }
+        h4 {
+            font-size: 25px;
+            font-weight: 900;
+            margin: 0 0 20px;
+            color: $secondary;
+        }
+        p {
+            color: #1c1734;
+            span {
+                color: $primary;
+                display: inline-block;
+                min-width: 60px;
+                font-weight: 800;
+                margin-right: 5px;
+            }
+        }
+        .abs {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            transform: translate(20%, 23%);
+        }
+    }
+    .q-drawer__content {
+        padding-top: 0px;
+    }
+    .q-item__section--main {
+        flex: none;
+    }
+    .q-link {
+        padding: 20px 0;
+        justify-content: center;
+    }
+    .last-img {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 90px);
+        left: 90px;
+        height: auto;
+    }
+}
