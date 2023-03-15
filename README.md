@@ -4,14 +4,13 @@
 nvm install 16
 ```
 
-## Setup eslint and follow prompts
-```
-./node_modules/.bin/eslint --init
-```
-
 ## Project setup
 ```
 npm install
+```
+## Setup eslint and follow prompts
+```
+./node_modules/.bin/eslint --init
 ```
 
 ### Compiles and minifies for production
@@ -26,7 +25,7 @@ https://cli.vuejs.org/guide/deployment.html#general-guidelines
 npm install -g serve
 ```
 
-### Run dist - live at http://localhost:3000 
+### Run dist - live at http://localhost:3000
 ```
 serve -s dist
 ```
