@@ -216,7 +216,7 @@ import Web3Modal from "web3modal";
 
 import { mapActions, mapGetters, mapState } from "vuex";
 export default {
-  name: "Home",
+  name: "Aleph-Beit",
   data() {
     return {
       tab: "one",
