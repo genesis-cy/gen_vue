@@ -76,7 +76,7 @@
       <q-page>
         <div class="main">
 
-          <template v-if="getUserAccount">
+          <!-- <template v-if="getUserAccount">
 
 
             <div
@@ -173,12 +173,89 @@
                 </q-form>
               </div>
             </div>
-          </template>
-          <template v-else>
-            <div class="flex">
-              <video height="600px" controls autoplay loop style="margin: auto">
+          </template> -->
+          <template >
+            <div class="">
+ <div class="hero-image-holder">
+      
+        <img
+          class="hero-image"
+          src="@/assets/home_banner.svg"
+          alt="Gen Card Mint Your Record"
+          loading="lazy"
+        />
+      
+      <p class="hero-text">
+       GenLife Card  -  patient medical record “Your GenLife card acts as an access card to your trials and to your data”
+      </p>
+    </div>
+    <section class="services-section">
+      <h4 class="services-title">Trials you can join today</h4>
+      <div class="services-wrapper">
+        <div class="card-services">
+          <!-- card-image -->
+          <div class="card-content">
+            <img
+              class="responsive-image"
+              src="@/assets/dna.png"
+              alt="Reprogram"
+              loading="lazy"
+            />
+            <div class="card-title">Plasmapheresis</div>
+            <div class="card-text">
+              improving epigentic age
+6 weeks 6 treatments
+            <div class="slots">20/100</div>
+            <div class="prices">$5000</div>
+            <button class="button">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-services">
+          <!-- card-image -->
+          <div class="card-content">
+            <img
+              class="responsive-image"
+              src="@/assets/molecule.png"
+              alt="Reshape"
+              loading="lazy"
+            />
+            <div class="card-title">Exosomes</div>
+            <div class="card-text">
+               improving epigentic age
+6 weeks 6 treatments
+            <div class="slots">20/100</div>
+            <div class="prices">$5000</div>
+            <button class="button">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-services">
+          <!-- card-image -->
+          <div class="card-content">
+            <img
+              class="responsive-image"
+              src="@/assets/atom.png"
+              alt="Redesign"
+              loading="lazy"
+            />
+            <div class="card-title">AKG</div>
+            <div class="card-text">
+              improving epigentic age
+6 weeks 6 treatments
+                        <div class="slots">20/100</div>
+            <div class="prices">$5000</div>
+            <button class="button">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+              <!-- <video height="600px" controls autoplay loop style="margin: auto">
                 <source src="@/assets/Fountain_NFT.mp4" type="video/mp4" />
-              </video>
+              </video> -->
             </div>
             <!-- <div class="flex">
             <q-card class="ml">

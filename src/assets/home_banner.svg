@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 560 400">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Poppins-Regular, Poppins;
+        font-size: 14px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: .5;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 4;
+        stroke-width: 1.98px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-6 {
+        fill: #f5faf8;
+      }
+
+      .cls-6, .cls-7 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-5 {
+        stroke-width: 1.98px;
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-7 {
+        fill: #f8fcfb;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="156.66" y1="726.31" x2="157.67" y2="725.45" gradientTransform="translate(-50352.77 149022.65) scale(322 -205)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#32b5ae"/>
+      <stop offset="1" stop-color="#7fcace"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-2">
+    <g id="Layer_1" data-name="Layer 1">
+      <path class="cls-6" d="m554.44,345.83c-16.59-45.43-58.72-47.23-96.28-103.38-27.01-40.38-7.82-101.85-56.4-154.54-22.09-23.96-106.74-44.43-164.98,18.68C165.24,184.11,18.32,162.4,2.79,280.79c-6.34,48.33,39.93,116.1,97.47,116.1h404.32c47.16,0,58.78-26.65,49.86-51.06Z"/>
+      <path class="cls-7" d="m499.25,293.19c0-129.21-152.14-96.96-230.87-206.02C189.66-21.89,134.56-.19,104.17,20.07c-72.81,48.54-12.24,148.53-13.6,184.88-1.36,36.35-61.65,52.75-43.37,131.41,4.76,20.49,28,60.54,56.11,60.54h297.5c69.5,0,98.44-59.99,98.44-103.71Z"/>
+      <g id="Design">
+        <rect id="Design-2" class="cls-8" x="96.93" y="116.48" width="322" height="205" rx="10" ry="10"/>
+        <g id="Group_26835" data-name="Group 26835">
+          <rect id="Rectangle_575" data-name="Rectangle 575" class="cls-3" x="119.16" y="139.24" width="42.97" height="34.57" rx="3.95" ry="3.95"/>
+          <path id="Vector_301" data-name="Vector 301" class="cls-5" d="m127.85,143.68s5.79-2.39,5.79,3.41-6.44,3.76-6.44,3.76m0,0h-8.05m8.05,0v8.54m0,0h-8.05m8.05,0s8.37,0,7.72,5.46-5.47,4.44-5.47,4.44"/>
+          <path id="Vector_302" data-name="Vector 302" class="cls-4" d="m153.15,166.87s-5.96,2.48-6.06-3.28,6.6-3.85,6.6-3.85m0,0l8.34-.15m-8.34.15l-.14-8.47m0,0l8.34-.15m-8.34.15s-8.67.16-8.1-5.28c.05-2.58,2.18-4.64,4.76-4.6.28,0,.56.03.84.09"/>
+        </g>
+        <g id="_3482_8384_8283" data-name=" 3482 8384 8283" class="cls-2">
+          <text class="cls-1" transform="translate(120.16 198.69)"><tspan x="0" y="0">3482 8384 </tspan></text>
+          <text class="cls-1" transform="translate(120.16 219.69)"><tspan x="0" y="0">8283</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
