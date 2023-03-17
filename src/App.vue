@@ -2,11 +2,12 @@
   <q-layout view="hHh lpR fFf">
     <q-header reveal bordered class="bg-white text-white" height-hint="98">
       <q-toolbar>
-        <img class="logo" src="@/assets/logo.png" />
+        <img class="logo" src="@/assets/genIcon.png" />
         <q-space />
         <q-tabs v-model="tab" class="text-teal">
-          <q-tab name="one" @click="tab = 'one'" label="JOIN TRIAL" />
-          <q-tab name="two" @click="tab = 'two'" label="MY RECORD" />
+          <q-tab name="one" @click="tab = 'one'" label="TRIALS" />
+          <q-tab name="two" @click="tab = 'two'" label="PASSPORT" />
+          <q-tab name="three" @click="tab = 'three'" label="CLINIC" />
         </q-tabs>
 
         <q-btn
@@ -177,14 +178,14 @@
           <template >
             <div class="">
  <div class="hero-image-holder">
-      
+
         <img
           class="hero-image"
           src="@/assets/home_banner.svg"
           alt="Gen Card Mint Your Record"
           loading="lazy"
         />
-      
+
       <p class="hero-text">
        GenLife Card  -  patient medical record “Your GenLife card acts as an access card to your trials and to your data”
       </p>
