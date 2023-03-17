@@ -42,6 +42,7 @@
       </q-toolbar>
     </q-header>
 
+<!--
     <q-drawer
       v-model="leftDrawerOpen"
       side="left"
@@ -72,6 +73,7 @@
         </q-item>
       </q-list>
     </q-drawer>
+  -->
 
     <q-page-container>
       <q-page>
