@@ -5,8 +5,8 @@
         <img class="logo" src="@/assets/genIcon.png" />
         <q-space />
         <q-tabs v-model="tab" class="text-teal">
+          <q-tab name="two" @click="tab = 'two'" label="GENCARD" />
           <q-tab name="one" @click="tab = 'one'" label="TRIALS" />
-          <q-tab name="two" @click="tab = 'two'" label="PASSPORT" />
           <q-tab name="three" @click="tab = 'three'" label="CLINIC" />
         </q-tabs>
 
