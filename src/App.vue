@@ -189,7 +189,8 @@
         />
 
       <p class="hero-text">
-       GenLife Card  -  patient medical record “Your GenLife card acts as an access card to your trials and to your data”
+       GenLife Card  - client medical record “Your GenLife card acts as an access card to your trials and to your data
+       ”
       </p>
     </div>
     <section class="services-section">
