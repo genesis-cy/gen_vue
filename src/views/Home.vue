@@ -26,7 +26,7 @@
                       <div class="card-content">
                         <img
                           class="responsive-image"
-                          src="@/assets/dna.png"
+                          src="@/assets/exo.png"
                           alt="Reprogram"
                           loading="lazy"
                         />
@@ -44,7 +44,7 @@
                       <div class="card-content">
                         <img
                           class="responsive-image"
-                          src="@/assets/molecule.png"
+                          src="@/assets/exo2.png"
                           alt="Reshape"
                           loading="lazy"
                         />
@@ -62,7 +62,7 @@
                       <div class="card-content">
                         <img
                           class="responsive-image"
-                          src="@/assets/atom.png"
+                          src="@/assets/dna.png"
                           alt="Redesign"
                           loading="lazy"
                         />
