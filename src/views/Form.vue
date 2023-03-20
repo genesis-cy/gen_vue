@@ -1,9 +1,9 @@
-<!--
+
 <template>
   <div class="flex justify-center align-items-center">
     <q-form @submit="onSubmit" class="q-gutter-md">
 
-      <h4 class="text-center">MY RECORD</h4>
+      <h4 class="text-center">CREATE MY RECORD</h4>
       <q-input outlined v-model="name" label="Full name" />
       <q-input outlined v-model="dob" label="Date of Birth">
         <template v-slot:prepend>
@@ -56,4 +56,3 @@
     </q-form>
   </div>
 </template>
--->

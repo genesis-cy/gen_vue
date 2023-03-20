@@ -15,9 +15,9 @@
 
 
 
-          <!-- <q-tab name="two" @click="tab = 'two'" label="Gen Card" />
+          <q-tab name="two"  @click="tab = 'two'" label="Gen Card" />
           <q-tab name="one" @click="tab = 'one'" label="Trials" />
-          <q-tab name="three" @click="tab = 'three'" label="Clinic" /> -->
+          <q-tab name="three" @click="tab = 'three'" label="Clinic" />
         </q-tabs>
 
         <q-btn
