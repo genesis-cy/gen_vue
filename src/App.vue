@@ -11,7 +11,9 @@
           <router-link to="/About">About | </router-link>
           <router-link to="/Form">Form | </router-link>
           <router-link to="/Patient">Patient | </router-link>
-          <router-link to="/ExoTrial">EXO</router-link>
+          <router-link to="/ExoTrial">EXO | </router-link>
+          <router-link to="/Consent">Consent</router-link>
+
 
 
 

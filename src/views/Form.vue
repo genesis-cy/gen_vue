@@ -1,12 +1,16 @@
 
 <template>
   <div class="flex justify-center align-items-center">
-    <q-form @submit="onSubmit" class="q-gutter-md">
+  <h4 class="text-center">MINT MY RECORD</h4>
+  <h4 class="text-center">Patient Consent</h4>
 
-      <h4 class="text-center">CREATE MY RECORD</h4>
+
+
+<!--
+    <q-form @submit="onSubmit" class="q-gutter-md">
       <q-input outlined v-model="name" label="Full name" />
       <q-input outlined v-model="dob" label="Date of Birth">
-        <template v-slot:prepend>
+      <template v-slot:prepend>
           <q-icon name="event" class="cursor-pointer">
             <q-popup-proxy
               transition-show="scale"
@@ -53,6 +57,7 @@
           color="primary"
         />
       </div>
-    </q-form>
+
+    </q-form> -->
   </div>
 </template>
