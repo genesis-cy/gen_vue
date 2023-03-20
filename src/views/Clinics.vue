@@ -1,5 +1,6 @@
 <template>
-  <div>Clinics</div>
+  <div><p>Sheba Longevity Center</p>
+  <p>Zuzalu Longevity Clinic</p></div>
 </template>
 
 <script>

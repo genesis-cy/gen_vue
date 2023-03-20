@@ -1,24 +1,11 @@
 <template>
   <div>
-    <q-layout view="hHh lpR fFf">
+    <q-layout view="genView">
       <q-page-container>
         <q-page>
           <div class="main">
             <template>
               <div class="">
-                <div class="hero-image-holder">
-                  <img
-                    class="hero-image"
-                    src="@/assets/home_banner.svg"
-                    alt="Gen Card Mint Your Record"
-                    loading="lazy"
-                  />
-
-                  <p class="hero-text">
-                    GenLife Card - client medical record “Your GenLife card acts
-                    as an access card to your trials and to your data ”
-                  </p>
-                </div>
                 <section class="services-section">
                   <h4 class="services-title">Trials you can join today</h4>
                   <div class="services-wrapper">

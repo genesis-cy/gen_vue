@@ -1,13 +1,20 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+  <q-layout view="genView">
     <q-header reveal bordered class="bg-white text-white" height-hint="98">
       <q-toolbar>
         <img class="logo" src="@/assets/genIcon.png" />
         <q-space />
         <q-tabs v-model="tab" class="text-teal">
-          <router-link to="/">Gen Card</router-link>
-          <router-link to="/Trials">Trials</router-link>
-          <router-link to="/Clinics">Clinic</router-link>
+          <router-link to="/">GenCard | </router-link>
+          <router-link to="/Trials">Trials | </router-link>
+          <router-link to="/Clinics">Clinic | </router-link>
+          <router-link to="/About">About | </router-link>
+          <router-link to="/Form">Form | </router-link>
+          <router-link to="/Patient">Patient | </router-link>
+          <router-link to="/ExoTrial">EXO</router-link>
+
+
+
           <!-- <q-tab name="two" @click="tab = 'two'" label="Gen Card" />
           <q-tab name="one" @click="tab = 'one'" label="Trials" />
           <q-tab name="three" @click="tab = 'three'" label="Clinic" /> -->

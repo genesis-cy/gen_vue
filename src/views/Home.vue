@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-layout view="hHh lpR fFf">
+    <q-layout view="genView">
       <q-page-container>
         <q-page>
           <div class="main">
@@ -15,8 +15,7 @@
                   />
 
                   <p class="hero-text">
-                    GenLife Card - client medical record “Your GenLife card acts
-                    as an access card to your trials and to your data ”
+                    GenCard - Biology. Health. Medicine. All your data in one place.
                   </p>
                 </div>
                 <section class="services-section">
