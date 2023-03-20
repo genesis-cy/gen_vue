@@ -1,6 +1,4 @@
 @import "./quasar.variables.scss";
-@import "~quasar-styl";
-// @import '~quasar-addon-styl';
 
 q-header {
     height: 100px;
@@ -136,10 +134,10 @@ q-header {
 
 // LIDAN ADD IN
 .hero-image-holder {
-    // background-color: #ebe0d7;
+
     position: relative;
     max-height: 500px;
-    // background-color: $colour-brown04;
+
 }
 
 .hero-image {
@@ -148,7 +146,7 @@ q-header {
 
 
 .responsive-image {
-    // width: 100%;
+
     max-width: 100%;
     height: auto;
     background-size: cover;
@@ -171,11 +169,11 @@ q-header {
 
 .services-section {
     padding: 0px 16px 16px;
-    // background-color: $colour-brown05;
+
 }
 
 .services-title {
-    // text-align: center;
+
     padding: 12px 0px;
 }
 
@@ -184,10 +182,10 @@ q-header {
 }
 
 .card-services {
-    // background-color: $colour-brown06;
+
     max-width: 300px;
     margin: 16px auto 0px;
-    // box-shadow: -1px 8px 18px -12px black;
+
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -198,7 +196,7 @@ q-header {
 }
 
 .card-title {
-    // background-color: $colour-brown06;
+
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -206,7 +204,7 @@ q-header {
 }
 
 .card-text {
-    // background-color: $colour-brown06;
+
     padding: 18px;
     text-align: justify;
     font-size: 14px;

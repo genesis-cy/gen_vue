@@ -1,39 +1,18 @@
-
-## Run Node v16
-```
-nvm install 16
-```
+# genesis
 
 ## Project setup
 ```
 npm install
 ```
-## Setup eslint and follow prompts
+
+### Compiles and hot-reloads for development
 ```
-./node_modules/.bin/eslint --init
+npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Install Serve package
-https://cli.vuejs.org/guide/deployment.html#general-guidelines
-
-```
-npm install -g serve
-```
-
-### Run dist - live at http://localhost:3000
-```
-serve -s dist
-```
-
-------------
-### Compiles and hot-reloads for development
-```
-npm run serve
 ```
 
 ### Lints and fixes files

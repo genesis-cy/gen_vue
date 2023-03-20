@@ -6,7 +6,7 @@ Vue.use(Vuex);
 import wallet from "./modules/walletState";
 
 export default new Vuex.Store({
-	modules: {
-		wallet: wallet
-	},
+  modules: {
+    wallet: wallet,
+  },
 });
