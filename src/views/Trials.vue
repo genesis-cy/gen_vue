@@ -14,11 +14,12 @@
                       <div class="card-content">
                         <img
                           class="responsive-image"
-                          src="@/assets/exo.png"
+                          src="@/assets/icon2.png"
                           alt="Reprogram"
                           loading="lazy"
+                          width="300px"
                         />
-                        <div class="card-title">Plasmapheresis</div>
+                        <div class="card-title">GenAge</div>
                         <div class="card-text">
                           improving epigentic age 6 weeks 6 treatments
                           <div class="slots">20/100</div>
@@ -50,11 +51,11 @@
                       <div class="card-content">
                         <img
                           class="responsive-image"
-                          src="@/assets/dna.png"
+                          src="@/assets/exo.png"
                           alt="Redesign"
                           loading="lazy"
                         />
-                        <div class="card-title">AKG</div>
+                        <div class="card-title">Plasma</div>
                         <div class="card-text">
                           improving epigentic age 6 weeks 6 treatments
                           <div class="slots">20/100</div>
