@@ -4,7 +4,7 @@
       <q-page-container>
         <q-page>
           <div class="main">
-            <template>
+
               <div class="">
                 <div class="hero-image-holder">
                   <img
@@ -78,7 +78,7 @@
                   </div>
                 </section>
               </div>
-            </template>
+              
           </div>
         </q-page>
       </q-page-container>

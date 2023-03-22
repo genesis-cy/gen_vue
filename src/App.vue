@@ -2,7 +2,7 @@
   <q-layout view="genView">
     <q-header reveal bordered class="bg-white text-white" height-hint="98">
       <q-toolbar>
-        <img class="logo" src="@/assets/genIcon.png" />
+        <img class="logo" src="@/assets/genIcon.png"/>
         <q-space />
         <q-tabs v-model="tab" class="text-teal">
           <router-link to="/">GenCard | </router-link>
