@@ -44,7 +44,7 @@
           class="btn-connect"
           @click="onConnect"
         >
-          Connect wallet
+          JOIN TRIAL
           <q-avatar
             color="white"
             text-color="primary"
