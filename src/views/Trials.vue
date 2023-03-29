@@ -1,10 +1,9 @@
 <template>
   <div>
     <section class="services-section">
-      <h4 class="services-title">Trials you can join today</h4>
+      <h4 class="services-title">Genesis Trial</h4>
       <div class="services-wrapper">
         <div class="card-services">
-          <!-- card-image -->
           <div class="card-content">
             <img
               class="responsive-image"
@@ -12,17 +11,16 @@
               alt="Reprogram"
               loading="lazy"
             />
-            <div class="card-title">Plasmapheresis</div>
+            <div class="card-title">GenAge</div>
             <div class="card-text">
-              improving epigentic age 6 weeks 6 treatments
+              Discover your real age
               <div class="slots">20/100</div>
               <div class="prices">$5000</div>
               <router-link to="exotrial" class="button">Learn More</router-link>
             </div>
           </div>
         </div>
-        <div class="card-services">
-          <!-- card-image -->
+        <!-- <div class="card-services">
           <div class="card-content">
             <img
               class="responsive-image"
@@ -40,7 +38,6 @@
           </div>
         </div>
         <div class="card-services">
-          <!-- card-image -->
           <div class="card-content">
             <img
               class="responsive-image"
@@ -56,7 +53,7 @@
               <router-link to="exotrial" class="button">Learn More</router-link>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
   </div>

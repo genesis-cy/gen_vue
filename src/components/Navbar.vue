@@ -86,7 +86,7 @@ export default {
       // END OF SCROLL HANDLER
       navItems: [
         {
-          name: "Trials",
+          name: "Trial",
           link: "/trials",
         },
 
