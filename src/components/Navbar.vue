@@ -98,22 +98,24 @@ export default {
           name: "About",
           link: "/about",
         },
-        {
-          name: "Form",
-          link: "/form",
-        },
-        {
-          name: "Patient",
-          link: "/patient",
-        },
-        {
-          name: "Exotrial",
-          link: "/exotrial",
-        },
-        {
-          name: "Consent",
-          link: "/consent",
-        },
+      
+        // {
+        //   name: "Form",
+        //   link: "/form",
+        // },
+        // {
+        //   name: "Patient",
+        //   link: "/patient",
+        // },
+        // {
+        //   name: "Exotrial",
+        //   link: "/exotrial",
+        // },
+        // {
+        //   name: "Consent",
+        //   link: "/consent",
+        // },
+
       ],
       tab: "one",
       name: "",

@@ -18,11 +18,11 @@
                   place.
                 </p>
               </div>
-              <section class="services-section">
+              <!-- <section class="services-section">
                 <h4 class="services-title">Trials you can join today</h4>
                 <div class="services-wrapper">
                   <div class="card-services">
-                    <!-- card-image -->
+                    
                     <div class="card-content">
                       <img
                         class="responsive-image"
@@ -42,7 +42,7 @@
                     </div>
                   </div>
                   <div class="card-services">
-                    <!-- card-image -->
+                    
                     <div class="card-content">
                       <img
                         class="responsive-image"
@@ -62,7 +62,7 @@
                     </div>
                   </div>
                   <div class="card-services">
-                    <!-- card-image -->
+                    
                     <div class="card-content">
                       <img
                         class="responsive-image"
@@ -82,7 +82,7 @@
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> -->
             </div>
           </div>
         </q-page>
