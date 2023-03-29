@@ -1,8 +1,9 @@
 <template>
-  <q-layout view="genView">
-    <q-header reveal bordered class="bg-white text-white" height-hint="98">
+  <div view="genView" class="top">
+    <Navbar />
+    <!-- <q-header reveal bordered class="bg-white text-white" height-hint="98">
       <q-toolbar>
-        <img class="logo" src="@/assets/genIcon.png"/>
+        <img class="logo" src="@/assets/genIcon.png" />
         <q-space />
         <q-tabs v-model="tab" class="text-teal">
           <router-link to="/">GenCard | </router-link>
@@ -14,10 +15,7 @@
           <router-link to="/ExoTrial">EXO | </router-link>
           <router-link to="/Consent">Consent</router-link>
 
-
-
-
-          <q-tab name="two"  @click="tab = 'two'" label="Gen Card" />
+          <q-tab name="two" @click="tab = 'two'" label="Gen Card" />
           <q-tab name="one" @click="tab = 'one'" label="Trials" />
           <q-tab name="three" @click="tab = 'three'" label="Clinic" />
         </q-tabs>
@@ -52,10 +50,10 @@
           />
         </q-btn>
       </q-toolbar>
-    </q-header>
+    </q-header> -->
 
-    <router-view />
-  </q-layout>
+    <router-view class="page" />
+  </div>
   <!-- <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -69,9 +67,15 @@
 import Web3 from "web3";
 import Web3Modal from "web3modal";
 
+import Navbar from "@/components/Navbar.vue";
+
 import { mapActions, mapGetters, mapState } from "vuex";
 export default {
   name: "Aleph-Beit",
+
+  // COMPONENTS
+  components: { Navbar },
+
   data() {
     return {
       tab: "one",
@@ -132,17 +136,14 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
+body {
+  padding: 0px;
+  margin: 0px;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.page {
+  padding-top: 108px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 </style>
