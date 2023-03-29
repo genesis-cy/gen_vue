@@ -1,5 +1,5 @@
 <template>
-  <div view="genView" class="top">
+  <div view="genView" class="top" id="app">
     <Navbar />
     <!-- <q-header reveal bordered class="bg-white text-white" height-hint="98">
       <q-toolbar>
@@ -129,11 +129,13 @@ export default {
 <style>
 @import "./styles/quasar.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 body {

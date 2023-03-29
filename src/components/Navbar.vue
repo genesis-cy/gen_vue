@@ -30,29 +30,39 @@
         class="header-navbar-main-right"
         :class="{ [`header-navbar-main-right--collapsed`]: !showFullNavbar }"
       >
-        <ul class="header-navbar-sub-content">
-          <li
-            v-for="navItem in navItems"
-            :key="navItem.name"
-            class="header-navbar-sub-nav-item"
-          >
-            <!-- v-ripple="{ color: 'rgba(57, 30, 30, .4)' }" -->
-            <router-link
-              class="header-navbar-sub-nav-item-link"
-              class-active="active"
-              :to="navItem.link"
-              >{{ navItem.name }}</router-link
+        <div class="header-navbar-sub-content-holder">
+          <ul class="header-navbar-sub-content">
+            <li
+              v-for="navItem in navItems"
+              :key="navItem.name"
+              class="header-navbar-sub-nav-item"
             >
-            <div class="element"></div>
-          </li>
-        </ul>
+              <!-- v-ripple="{ color: 'rgba(57, 30, 30, .4)' }" -->
+              <router-link
+                class="header-navbar-sub-nav-item-link"
+                class-active="active"
+                :to="navItem.link"
+                >{{ navItem.name }}</router-link
+              >
+              <div class="element"></div>
+            </li>
+          </ul>
+          <button v-if="userAccount" class="btn-connect button">
+            {{ addrTruncation(userAccount) }}
+          </button>
+          <button v-else class="btn-connect button" @click="onConnect">
+            JOIN TRIAL
+          </button>
+        </div>
       </div>
     </nav>
   </header>
 </template>
 <script>
+import Web3 from "web3";
+import Web3Modal from "web3modal";
 // IMPORT STORE DATA
-
+import { mapActions, mapGetters, mapState } from "vuex";
 // IMPORTS
 
 // COMPONENTS & MODULES
@@ -105,16 +115,33 @@ export default {
           link: "/consent",
         },
       ],
+      tab: "one",
+      name: "",
+      dob: "",
+      height: "",
+      weight: "",
+      overview: "",
+      web3: null,
+      web3Modal: null,
+      leftDrawerOpen: true,
+      selectedAccount: null,
     };
   },
 
   // COMPUTED
-  computed: {},
+  computed: {
+    ...mapGetters("wallet", ["getWeb3", "getUserAccount"]),
+    ...mapState("wallet", ["userAccount"]),
+  },
 
   // MOUNTED LIFECYCLE
   // SCROLL HANDLER CAN REMOVE WHEN MADE INTO DIRECTIVE
   mounted() {
     window.addEventListener("scroll", this.onScroll);
+    this.web3Modal = new Web3Modal({
+      cacheProvider: false,
+      disableInjectedProvider: false,
+    });
   },
   // END OF SCROLL HANDLER
 
@@ -146,6 +173,27 @@ export default {
       this.lastScrollPosition = currentScrollPosition;
     },
     // END OF SCROLL HANDLER
+    ...mapActions("wallet", ["SET_WEB3", "SET_USER_ACCOUNT"]),
+    addrTruncation(addr) {
+      return addr.slice(0, 6) + "…" + addr.slice(addr.length - 4, addr.length);
+    },
+    async onConnect() {
+      try {
+        let provider = await this.web3Modal.connect();
+        this.web3 = new Web3(provider);
+        this.SET_WEB3(this.web3);
+        let accounts = await this.web3.eth.getAccounts();
+        this.selectedAccount = accounts[0];
+        this.SET_USER_ACCOUNT(accounts[0]);
+        this.$toasted.show("Metamask Wallet Connected!");
+      } catch (e) {
+        console.log("Could not get a wallet connection", e);
+        return;
+      }
+    },
+    onSubmit() {
+      this.$toasted.show("Your form is submitted");
+    },
   },
 };
 </script>
@@ -277,6 +325,23 @@ export default {
   }
 }
 
+.header-navbar-sub-content-holder {
+  // FLEX
+  display: flex;
+  // FLEX PROPERTIES
+  flex-wrap: nowrap;
+  align-items: center;
+  // justify-content: space-between;
+  // makes scrollable
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .header-navbar-sub-content {
   list-style-type: none;
   margin-block-start: 0em;
@@ -292,9 +357,9 @@ export default {
   align-items: center;
   // justify-content: space-between;
   // makes scrollable
-  white-space: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  // white-space: nowrap;
+  // overflow-x: scroll;
+  // overflow-y: hidden;
 
   &::-webkit-scrollbar {
     display: none;
@@ -315,6 +380,21 @@ export default {
   // display: block;
   overflow: hidden;
   padding: 0 10px;
+}
+
+.button {
+  margin: 0px auto 0px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background-color: #dafff6;
+  border: 2px solid #05540d;
+  border-radius: 28px;
+  font-size: 14px;
+  font-family: "Open Sans";
 }
 
 // SMALL

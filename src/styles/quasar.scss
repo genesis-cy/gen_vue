@@ -1,5 +1,12 @@
 @import "./quasar.variables.scss";
 
+a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 q-header {
     height: 100px;
 }

@@ -35,7 +35,9 @@
                         improving epigentic age 6 weeks 6 treatments
                         <div class="slots">20/100</div>
                         <div class="prices">$5000</div>
-                        <button class="button">Learn More</button>
+                        <router-link to="exotrial" class="button"
+                          >Learn More</router-link
+                        >
                       </div>
                     </div>
                   </div>
@@ -53,7 +55,9 @@
                         improving epigentic age 6 weeks 6 treatments
                         <div class="slots">20/100</div>
                         <div class="prices">$5000</div>
-                        <button class="button">Learn More</button>
+                        <router-link to="exotrial" class="button"
+                          >Learn More</router-link
+                        >
                       </div>
                     </div>
                   </div>
@@ -71,7 +75,9 @@
                         improving epigentic age 6 weeks 6 treatments
                         <div class="slots">20/100</div>
                         <div class="prices">$5000</div>
-                        <button class="button">Learn More</button>
+                        <router-link to="exotrial" class="button"
+                          >Learn More</router-link
+                        >
                       </div>
                     </div>
                   </div>
